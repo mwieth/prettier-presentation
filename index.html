@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            Prettier
+          </section>
+          <section>
+            <p>What is prettier?</p>
+            <ul>
+              <li>An <b>opinionated</b> code formatter</li>
+              <li>Supports many languages (also *.ts, *.jsx)</li>
+              <li>Works with most editors</li>
+              <li>Very few options</li>
+            </ul>
+          </section>
+          <section>
+            <p>Why?</p>
+            <ul>
+              <li>
+                Save and done. Your code is formatted! (VSCode Setting:
+                formatOnSave)
+              </li>
+              <li>... in a consistent way!</li>
+              <li>No need for you to manually format code -> save time!</li>
+              <li>No formatting discussion in code reviews or in general</li>
+            </ul>
+          </section>
+          <section>
+            <p>Difference to linters?</p>
+            <ul>
+              <li>Commonality -> Linters can also have formatting rules!</li>
+              <li>
+                Difference -> Linters can also help to insure Code Quality
+              </li>
+              <li>
+                For Example: no unused variable rule or 'let' and 'const'
+                instead of 'var'
+              </li>
+              <li>Use them together?</li>
+            </ul>
+          </section>
+          <section>
+            <p>Is it used within Avenga?</p>
+            <ul>
+              <li>HDI Project</li>
+              <li>ICP Web Shop</li>
+            </ul>
+          </section>
+          <section>https://prettier.io/playground/</section>
+          <section>
+            <p>Want to know more?</p>
+            <ul>
+              <li>https://prettier.io/docs/en/index.html</li>
+              <li>https://github.com/prettier/prettier-vscode</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
